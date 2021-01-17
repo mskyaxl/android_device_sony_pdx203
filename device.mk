@@ -107,11 +107,12 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libdisplayconfig \
+    libdisplayconfig.qti \
     libqdMetaData \
     libqdMetaData.system \
     libvulkan \
-    vendor.display.config@1.0
+    vendor.display.config@1.0 \
+		vendor.display.config@2.0
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -132,6 +133,9 @@ PRODUCT_PACKAGES += \
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_vendor.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_profiles_vendor.xml
+
+PRODUCT_PACKAGES += \
+    libavservices_minijail
 
 # Net
 PRODUCT_PACKAGES += \
