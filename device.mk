@@ -99,10 +99,10 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # DTBO
-# LOCAL_DTB := $(LOCAL_PATH)/prebuilt/dtb.img
+LOCAL_DTB := $(LOCAL_PATH)/prebuilt/dtb.img
 
-# PRODUCT_COPY_FILES += \
-#     $(LOCAL_DTB):dtb.img
+PRODUCT_COPY_FILES += \
+    $(LOCAL_DTB):dtb.img
 
 # Display
 PRODUCT_PACKAGES += \
