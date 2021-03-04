@@ -47,4 +47,4 @@ PRODUCT_COPY_FILES += \
 
 # Device specific overlay
 DEVICE_PACKAGE_OVERLAYS += \
-#     $(LOCAL_PATH)/overlay-pe
+    $(LOCAL_PATH)/overlay-pe
