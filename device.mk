@@ -53,7 +53,3 @@ LOCAL_DTB := $(LOCAL_PATH)/prebuilt/dtb.img
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_DTB):dtb.img
-
-# Device specific overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-pe
