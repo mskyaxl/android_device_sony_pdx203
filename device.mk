@@ -1,6 +1,5 @@
 #
 # Copyright (C) 2018 The LineageOS Project
-# Copyright (C) 2021 The PixelExperience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,9 +26,10 @@ $(call inherit-product, vendor/sony/pdx203/pdx203-vendor.mk)
 # Inherit from common
 $(call inherit-product, device/sony/edo-common/edo.mk)
 
-# Custom sony stuff
-# Note: closed sourced
-$(call inherit-product, device/sony/xperia-common/xperia.mk)
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
