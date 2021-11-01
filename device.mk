@@ -39,8 +39,3 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_PACKAGES += \
     Snap
 
-# DTBO
-LOCAL_DTB := $(LOCAL_PATH)/prebuilt/dtb.img
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_DTB):dtb.img
