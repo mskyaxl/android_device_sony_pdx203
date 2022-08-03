@@ -15,9 +15,14 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_pdx203.mk
+    $(LOCAL_DIR)/lineage_xqat51.mk \
+    $(LOCAL_DIR)/lineage_xqat52.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_pdx203-user \
-    lineage_pdx203-userdebug \
-    lineage_pdx203-eng
+    lineage_xqat51-user \
+		lineage_xqat51-userdebug \
+    lineage_xqat51-eng \
+		lineage_xqat52-user \
+    lineage_xqat52-userdebug \
+    lineage_xqat52-eng
+
